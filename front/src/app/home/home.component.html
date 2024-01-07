@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="col left">
+    <h1>Profile utilisateur</h1>
+    <div class="img-container">
+      <img src={{imgLink}} alt="default image of a man">
+    </div>
+    <h3 class="user-info">{{name}} ({{email}})</h3>
+    <div class="user-footer">
+      <div>
+        <h4>Touites</h4>
+        <h5>{{touitesCount}}</h5>
+      </div>
+      <div>
+        <h4>Followers</h4>
+        <h5>{{followersCount}}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <h1>Liste des touites</h1>
+    <div class="touites-container">
+      <div *ngFor="let touite of touites" class="touites">
+        <div class="left">
+          <div class="touite-user-info">
+            <div class="img-container">
+              <img src={{imgLink}} alt="default image of a man">
+            </div>
+            <h3>{{name}}</h3>
+          </div>
+          <p class="touites-message">{{touite}}</p>
+        </div>
+        <div class="right">
+          <div class="svg">
+            <img src="../../assets/pen-solid.svg" alt="pencil logo">
+          </div>
+          <div class="svg">
+            <img src="../../assets/trash-alt-solid.svg" alt="trash logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

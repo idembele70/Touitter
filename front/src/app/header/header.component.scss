@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #0dcaf0;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  max-width: 100%;
+  word-wrap: break-word;
+  & > h1 {
+    max-width: 100%;
+  }
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+}
+
+.sign-container {
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
+  &>a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    @media (max-width: 576px) {
+      font-size: 1rem;
+      padding: 8px;
+      max-width: 100%;
+      word-wrap: break-word;
+      flex: 0 0 auto;
+    }
+  }
+
+  .sign-in {
+    margin-right: 16px;
+
+    @media (max-width: 576px) {
+      margin-right: 0;
+    }
+  }
+}

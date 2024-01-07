@@ -1,0 +1,196 @@
+.container {
+  display: flex;
+  max-width: 90vw;
+  margin: 16px auto;
+  flex-wrap: wrap;
+
+  & .col {
+    padding: 16px;
+    width: 50%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+
+  & h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    @media (max-width:1200px) {
+      font-size: calc(1.375rem + 1.5vw);
+    }
+    @media (max-width: 576px) {
+      word-wrap: break-word;
+    }
+  }
+
+  &>.left {
+    background: #fff;
+
+    & .img-container {
+      height: 100px;
+      width: 100px;
+      overflow: hidden;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      @media (max-width: 576px) {
+        width: 60vw;
+        height: 60vw;
+        max-height: 100px;
+        max-width: 100px;
+      }
+    }
+
+    & .img-container>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    & h3.user-info {
+      font-size: 1.75rem;
+      font-weight: 500;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 16px;
+
+      @media (max-width:1200px) {
+        font-size: calc(1.3rem + .6vw);
+      }
+      @media (max-width: 576px) {
+        word-wrap: break-word;
+      }
+    }
+
+    .user-footer {
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+      margin: 0 auto;
+      @media (max-width: 576px) {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+      }
+    }
+
+    & .user-footer > div {
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+
+    & .user-footer h4 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+      @media (max-width: 576px) {
+        word-wrap: break-word;
+      }
+    }
+
+    & .user-footer h5 {
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-top: 8px;
+      @media (max-width: 576px) {
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+.touites {
+  display: flex;
+  background-color: #fff;
+  padding: 8px;
+  margin-bottom: 16px;
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+  & .left {
+    width: 80%;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+    & h3 {
+      font-size: 1.75rem;
+      font-weight: 500;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 16px;
+
+      @media (max-width:1200px) {
+        font-size: calc(1.3rem + .6vw);
+      }
+    }
+    &>p.touites-message {
+      margin-top: 16px;
+      text-align: justify;
+      word-wrap: break-word;
+      @media (max-width: 572px) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  & .right {
+    width: 20%;
+    min-width: 140px;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    @media (max-width: 572px) {
+      flex-wrap: wrap;
+      min-width: auto;
+      width: 100%;
+    }
+    &>.svg {
+      height: 24px;
+      width: 24px;
+      overflow: hidden;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  & .touite-user-info {
+    display: flex;
+    align-items: center;
+    @media (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+    & > h3 {
+      flex: 0 0 auto;
+      max-width: 100%;
+      word-wrap: break-word;
+    }
+  }
+
+  & .img-container {
+    margin-right: 12px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+
+}
